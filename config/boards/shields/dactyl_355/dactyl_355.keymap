@@ -5,11 +5,6 @@
 #define LWR 1
 #define RSE 2
 
-#define LСT_EQL &mt LCTRL EQUAL
-#define RСT_MNS &mt RCTRL MINUS
-#define LSH_LPAR &mt LSHFT LPAR
-#define PSH_PPAR &mt RSHFT RPAR
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -29,7 +24,7 @@
             key-positions = <10 11>;
         };
 
-        renter {
+        enter {
             bindings = <&kp ENTER>;
             key-positions = <17 18>;
         };
@@ -37,30 +32,31 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         default_layer {
             bindings = <
-&kp Q     &kp W     &kp E     &kp R     &kp T                                                                          &kp Y            &kp U     &kp I      &kp O     &kp P
-&kp A     &kp S     &kp D     &kp F     &kp G                                                                          &kp H            &kp J     &kp K      &kp L     &kp SEMI
-&kp Z     &kp X     &kp C     &kp V     &kp B             &mt LSHFT LPAR    &mt RALT RET    &kp SPACE  &mt RSHFT RPAR  &kp N            &kp M     &kp COMMA  &kp DOT   &kp FSLH
-          &kp LALT  &mo 2               &mt LCTRL EQUAL   &lt 1 LBKT        &kp LEFT_GUI    &kp RALT   &lt 1 RBKT      &mt RCTRL MINUS            &mo 2      &kp LGUI      
+&kp Q  &kp W     &kp E  &kp R  &kp T                                                                     &kp Y            &kp U  &kp I      &kp O     &kp P
+&kp A  &kp S     &kp D  &kp F  &kp G                                                                     &kp H            &kp J  &kp K      &kp L     &kp SEMI
+&kp Z  &kp X     &kp C  &kp V  &kp B            &mt LSHFT LPAR  &mt RALT RET  &kp SPACE  &mt RSHFT RPAR  &kp N            &kp M  &kp COMMA  &kp DOT   &kp FSLH
+       &kp LALT  &mo 2         &mt LCTRL EQUAL  &lt 1 LBKT      &kp LEFT_GUI  &kp RALT   &lt 1 RBKT      &mt RCTRL MINUS         &mo 2      &kp LGUI
             >;
         };
 
         lower_layer {
             bindings = <
-&kp ESC    &kp N7    &kp N8    &kp N9    &kp BSPC                                      &kp DEL   &kp HOME  &kp UP     &kp END    &kp PG_UP
-&kp N0     &kp N4    &kp N5    &kp N6    &kp DEL                                       &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &kp PG_DN
-&kp GRAVE  &kp N1    &kp N2    &kp N3    &kp TAB   &trans  &trans      &trans  &trans  &kp TAB   &trans    &kp K_APP  &kp SQT    &kp NUBS
-           &trans    &trans              &trans    &trans  &trans      &trans  &trans  &trans    &trans               &trans     
+&kp ESC    &kp N7  &kp N8  &kp N9  &kp BSPC                                  &kp DEL   &kp HOME  &kp UP     &kp END    &kp PG_UP
+&kp N0     &kp N4  &kp N5  &kp N6  &kp DEL                                   &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &kp PG_DN
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp TAB   &trans  &trans  &trans  &trans  &kp TAB   &trans    &kp K_APP  &kp SQT    &kp NUBS
+           &trans  &trans          &trans    &trans  &trans  &trans  &trans  &trans              &trans     &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &none                                       &trans  &trans  &trans  &trans  &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &kp DEL                                     &trans  &trans  &trans  &trans  &trans
-&kp F10  &kp F1  &kp F2  &kp F3  &none   &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-         &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &none                                    &trans  &trans  &trans  &trans  &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &kp DEL                                  &trans  &trans  &trans  &trans  &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &none    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &trans          &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans
             >;
         };
     };
