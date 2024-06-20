@@ -5,6 +5,11 @@
 #define LWR 1
 #define RSE 2
 
+#define LСT_EQL  &mt LCTRL EQUAL
+#define RСT_MNS  &mt RCTRL MINUS
+#define LSH_LPAR  &mt LSHFT LPAR
+#define PSH_PPAR  &mt RSHFT RPAR
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -32,13 +37,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-
-#define LСT_EQL  &mt LCTRL EQUAL
-#define RСT_MNS  &mt RCTRL MINUS
-#define LSH_LPAR  &mt LSHFT LPAR
-#define PSH_PPAR  &mt RSHFT RPAR
-
-
         default_layer {
             bindings = <
 &kp Q     &kp W     &kp E     &kp R     &kp T                                                        &kp Y     &kp U     &kp I      &kp O     &kp P
