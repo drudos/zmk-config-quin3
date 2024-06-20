@@ -5,10 +5,10 @@
 #define LWR 1
 #define RSE 2
 
-#define LСT_EQL     &mt LCTRL EQUAL
-#define RСT_MNS     &mt RCTRL MINUS
-#define LSH_LPAR    &mt LSHFT LPAR
-#define PSH_PPAR    &mt RSHFT RPAR
+#define LСT_EQL &mt LCTRL EQUAL 
+#define RСT_MNS &mt RCTRL MINUS 
+#define LSH_LPAR &mt LSHFT LPAR 
+#define PSH_PPAR &mt RSHFT RPAR 
 
 / {
     combos {
