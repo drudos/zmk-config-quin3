@@ -1,17 +1,10 @@
 if SHIELD_DACTYL_355_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "DACTYL_355-L"
+        default "Dactyl_355"
 
-    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    config ZMK_SPLIT_ROLE_CENTRAL
         default y
-
-endif
-
-if SHIELD_DACTYL_355_RIGHT
-
-    config ZMK_KEYBOARD_NAME
-        default "DACTYL_355-R"
 
 endif
 
