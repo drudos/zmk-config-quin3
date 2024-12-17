@@ -1,16 +1,19 @@
+# Copyright (c) 2020 Pete Johanson, Kurtis Lew
+# SPDX-License-Identifier: MIT
+
 if SHIELD_DACTYL_355_LEFT
 
-    config ZMK_KEYBOARD_NAME
-        default "Dactyl_355"
+config ZMK_KEYBOARD_NAME
+    default "Dactyl_355"
 
-    config ZMK_SPLIT_ROLE_CENTRAL
-        default y
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
 endif
 
 if SHIELD_DACTYL_355_LEFT || SHIELD_DACTYL_355_RIGHT
 
-    config ZMK_SPLIT
-        default y
+config ZMK_SPLIT
+    default y
 
 endif
