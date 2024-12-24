@@ -12,6 +12,12 @@
 #define LWR 1
 #define RSE 2
 
+/* Custom Defined Behaviors */
+#define HT_NORMAL 180
+#define HT_LONG 250
+#define HT_SHORT 130
+
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -36,11 +42,6 @@
             key-positions = <17 18>;
         };
     };
-
-    /* Custom Defined Behaviors */
-#define HT_NORMAL 180
-#define HT_LONG 250
-#define HT_SHORT 130
 
     behaviors {
         HT(as      , auto_shift      , HT_NORMAL, <&kp &kp>)
