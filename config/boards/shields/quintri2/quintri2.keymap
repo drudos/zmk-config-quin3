@@ -52,12 +52,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// ----------------------------------------------------------------------------------------
-// | Q |  W |  E  | R |   T   |                                |   Y   | U |  I  |  O | P |
-// | A |  S |  D  | F |   G   |                                |   H   | J |  K  |  L | ; |
-// | Z |  X |  C  | V |   B   |SHFT"("|RALT ENT|  |SPC |SHFT")"|   N   | M |  ,  |  . | / |
-//     |LGUI|RAISE|   |CTRL"="|LOW "["|  LALT  |  |RALT|LOW "]"|CTRL"-"|   |RAISE|LGUI|
-//     ------------   --------------------------  ----------------------   ------------
+// -----------------------------                                    ------------------------------
+// | Q |  W |  E  | R |   T    |                                    |    Y    | U |  I  |  O | P |
+// | A |  S |  D  | F |   G    |                                    |    H    | J |  K  |  L | ; |
+// | Z |  X |  C  | V |   B    |SHFT LPAR|RALT ENT|  |SPC |SHFT RPAR|    N    | M |  ,  |  . | / |
+//     |LGUI|RAISE|   |CTRL EQL|LOW  LBKT|  LALT  |  |RALT|LOW  RBKT|CTRL MINS|   |RAISE|LGUI|
+//     ------------   -----------------------------  --------------------------   ------------
             bindings = <
 &as LS(Q) Q  &as LS(W) W  &as LS(E) E  &as LS(R) R  &as LS(T) T                                                                 &as LS(Y) Y      &as LS(U) U  &as LS(I) I          &as LS(O) O    &as LS(P) P
 &as LS(A) A  &as LS(S) S  &as LS(D) D  &as LS(F) F  &as LS(G) G                                                                 &as LS(H) H      &as LS(J) J  &as LS(K) K          &as LS(L) L  &as LS(SEMI) SEMI
@@ -67,12 +67,12 @@
         };
 
         lower_layer {
-// -----------------------------------------------------------------------------------------
-// |ESC|  7 |  8  | 9 | BSPC  |                                |  DEL  |HOME| UP  | O  | P |
-// | 0 |  4 |  5  | 6 |  DEL  |                                | BSPC  |LEFT|DOWN | L  | ; |
-// | ` |  1 |  2  | 3 |  TAB  |SHFT"("|RALT ENT|  |SPC |SHFT")"|  TAB  |    | MEN | '  | \ |
-//     |LGUI|RAISE|   |CTRL"="|LOW "["|  LALT  |  |RALT|LOW "]"|CTRL"-"|    |RAISE|LGUI|
-//     ------------   --------------------------  ----------------------    ------------
+// -----------------------------                                    -------------------------------
+// |ESC|  7 |  8  | 9 | BSPC   |                                    |   DEL   |HOME| UP  | O  | P |
+// | 0 |  4 |  5  | 6 |  DEL   |                                    |  BSPC   |LEFT|DOWN | L  | ; |
+// | ` |  1 |  2  | 3 |  TAB   |SHFT LPAR|RALT ENT|  |SPC |SHFT RPAR|   TAB   |    | MEN | '  | \ |
+//     |LGUI|RAISE|   |CTRL EQL|LOW  LBKT|  LALT  |  |RALT|LOW  RBKT|CTRL MINS|    |RAISE|LGUI|
+//     ------------   -----------------------------  --------------------------    ------------
             bindings = <
 &kp ESC              &as LS(N7) N7  &as LS(N8) N8  &as LS(N9) N9  &kp BSPC                                    &kp DEL   &kp HOME  &kp UP     &kp END          &kp PG_UP
 &as LS(N0) N0        &as LS(N4) N4  &as LS(N5) N5  &as LS(N6) N6  &kp DEL                                     &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT        &kp PG_DN
@@ -83,11 +83,11 @@
 
         raise_layer {
 // -------------------------------------------------------------------------------------------------
-// |F12| F7 | F8  | F9 |       |                                | BT0   |BT1| BT2 |BT3 |BT4 |
-// |F11| F4 | F5  | F6 |  DEL  |                                | BTCLR |   |     |    |BLDR|
-// |F10| F1 | F1  | F3 |       |SHFT"("|RALT ENT|  |SPC |SHFT")"| RST   |OUT|     |    |STU |
-//     |LGUI|RAISE|    |CTRL"="|LOW "["|  LALT  |  |RALT|LOW "]"|CTRL"-"|   |RAISE|LGUI|
-//     ------------    --------------------------  ----------------------   ------------
+// |F12| F7 | F8  | F9 |        |                                    |  BT0    |BT1| BT2 |BT3 |BT4 |
+// |F11| F4 | F5  | F6 |  DEL   |                                    |  BTCLR  |   |     |    |BLDR|
+// |F10| F1 | F1  | F3 |        |SHFT LPAR|RALT ENT|  |SPC |SHFT RPAR|   RST   |OUT|     |    |STU |
+//     |LGUI|RAISE|    |CTRL EQL|LOW  LBKT|  LALT  |  |RALT|LOW  RBKT|CTRL MINS|   |RAISE|LGUI|
+//     ------------    -----------------------------  --------------------------   ------------
             bindings = <
 &kp F12  &kp F7  &kp F8  &kp F9  &none                                                                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &kp F11  &kp F4  &kp F5  &kp F6  &kp DEL                                                                &none         &none         &none         &none         &none
