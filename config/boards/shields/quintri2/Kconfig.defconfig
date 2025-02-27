@@ -4,14 +4,14 @@
 if SHIELD_QUINTRI2_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "QuinTri2"
+    default "Quin3"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_QUINTRI2_LEFT || SHIELD_QUINTRI2_RIGHT
+if SHIELD_QUIN3_LEFT || SHIELD_QUIN3_RIGHT
 
 config ZMK_SPLIT
     default y
