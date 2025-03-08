@@ -13,7 +13,6 @@
 #define RSE 2
 
 / {
-
     combos {
         compatible = "zmk,combos";
 
