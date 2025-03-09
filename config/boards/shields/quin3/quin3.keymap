@@ -12,28 +12,35 @@
 #define LWR 1
 #define RSE 2
 
+// ------------------------------------------------------------------------------------
+// |  0 |  1 |  2 |  3 |  4 |  5 |                      |  6 |  7 |  8 |  9 | 10 | 11 |
+// | 12 | 13 | 14 | 15 | 16 | 17 |                      | 18 | 19 | 20 | 21 | 22 | 23 |
+// | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 |  | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 |
+//           | 40 | 41 |    | 42 | 43 | 44 |  | 45 | 46 | 47 |    | 48 | 49 |
+// ------------------------------------------------------------------------------------
+
 / {
     combos {
         compatible = "zmk,combos";
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
         };
 
         space {
             bindings = <&kp SPACE>;
-            key-positions = <11 12>;
+            key-positions = <14 15>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <13 14>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <17 18>;
+            key-positions = <20 21>;
         };
     };
 
@@ -41,10 +48,10 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |   ESC   | Q |  W |  E  | R |    T   |                                    |    Y    | U |  I  |  O | P |
-// |   TAB   | A |  S |  D  | F |    G   |                                    |    H    | J |  K  |  L | ; |
-// |SHFT LPAR| Z |  X |  C  | V |    B   |SHFT LPAR|RALT ENT|  |SPC |SHFT RPAR|    N    | M |  ,  |  . | / |
+// -------------------------------------------------------------------------------------------------------------------
+// |   ESC   | Q |  W |  E  | R |    T   |                                    |    Y    | U |  I  |  O | P |    \    |
+// |   TAB   | A |  S |  D  | F |    G   |                                    |    H    | J |  K  |  L | ; |    '    |
+// |SHFT LPAR| Z |  X |  C  | V |    B   |SHFT LPAR|RALT ENT|  |SPC |SHFT RPAR|    N    | M |  ,  |  . | / |SHFT RPAR|
 //               |LGUI|RAISE|   |CTRL EQL|LOW  LBKT|LALT    |  |RALT|LOW  RBKT|CTRL MINS|   |RAISE|LGUI|
             bindings = <
 &kp ESC         &kp Q  &kp W     &kp E  &kp R  &kp T                                                                       &kp Y            &kp U  &kp I      &kp O    &kp P     &kp NUBS
